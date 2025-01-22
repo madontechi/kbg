@@ -1,0 +1,12 @@
+﻿@font-face {
+  font-family: 'Rufina';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/rufina/v15/Yq6V-LyURyLy-aKCpB5g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rufina';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/rufina/v15/Yq6W-LyURyLy-aKKHztwu8Za.ttf) format('truetype');
+}

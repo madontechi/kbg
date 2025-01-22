@@ -1,0 +1,730 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop By Category</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: #fff;
+        }
+
+        .category-section {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .category-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+
+        .category-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Assigning background images */
+        .category-item:nth-child(1) {
+            grid-column: span 1;
+            grid-row: span 2;
+            background-image: url('https://via.placeholder.com/600x400');
+        }
+
+        .category-item:nth-child(2) {
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(3) {
+            grid-column: span 2;
+            grid-row: span 1;
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 2;
+           
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(5) {
+            
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(6) {
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(7) {
+            grid-column: span 1;
+            grid-row: span 2;
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(8) {
+            grid-column: span 2;
+            grid-row: span 1;
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(9) {
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        .category-item:nth-child(10) {
+           
+            background-image: url('https://via.placeholder.com/300');
+        }
+
+        @media (max-width: 1024px) {
+            .category-section {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .category-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .category-section {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .category-item {
+                height: 150px;
+            }
+
+            .category-item .overlay {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="category-section">
+        <a href="#smartphone1" class="category-item">
+            <div class="overlay">Smartphone 1: Experience unmatched battery life with a sleek, modern design.</div>
+        </a>
+        <a href="#smartphone2" class="category-item">
+            <div class="overlay">Smartphone 2: Capture every moment in stunning detail with a high-resolution camera.</div>
+        </a>
+        <a href="#smartphone3" class="category-item">
+            <div class="overlay">Smartphone 3: Lightning-fast processor for seamless multitasking.</div>
+        </a>
+        <a href="#smartphone4" class="category-item">
+            <div class="overlay">Smartphone 4: Top-tier performance with a stunning display.</div>
+        </a>
+        <a href="#smartphone5" class="category-item">
+            <div class="overlay">Smartphone 5: Best-in-class sound quality for music and calls.</div>
+        </a>
+        <a href="#smartphone6" class="category-item">
+            <div class="overlay">Smartphone 6: Compact design with exceptional battery life.</div>
+        </a>
+        <a href="#smartphone7" class="category-item">
+            <div class="overlay">Smartphone 7: Durable smartphone with a rugged design.</div>
+        </a>
+        <a href="#smartphone8" class="category-item">
+            <div class="overlay">Smartphone 8: Flagship model with innovative technology.</div>
+        </a>
+        <a href="#smartphone9" class="category-item">
+            <div class="overlay">Smartphone 9: Large display and powerful battery for entertainment.</div>
+        </a>
+        <a href="#smartphone10" class="category-item">
+            <div class="overlay">Smartphone 10: The ultimate gaming smartphone with ultra-fast performance.</div>
+        </a>
+    </section>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Carousel</title>
+    <!-- <style>
+        .carousel {
+            width: 800px; 
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-inner {
+            display: flex; 
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        .carousel-item {
+            min-width: 100%; 
+            flex-shrink: 0; 
+            text-align: center; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .carousel-item img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-nav button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style> -->
+
+    <style>
+/* Carousel Wrapper */
+.homepage-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-content {
+  max-width: 40%;
+}
+
+.carousel-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.carousel-content h2 span {
+  color: #f39c12;
+}
+
+.carousel-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+}
+
+.carousel-content ul li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #d35400;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex-direction: column;
+  }
+
+  .carousel-item img {
+    width: 90%;
+    height: auto;
+  }
+
+  .carousel-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .carousel-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    padding: 8px 12px;
+  }
+
+  .carousel-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+<!-- 
+<div class="carousel">
+    <div class="carousel-inner" id="carouselInner">
+        <div class="carousel-item">
+            <img src="https://dummyimage.com/800x400/000/fff" alt="Image 1">
+            <h2>Card 1</h2>
+            <p>Description for card 1.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="https://dummyimage.com/800x400/f00/fff" alt="Image 2">
+            <h2>Card 2</h2>
+            <p>Description for card 2.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="https://dummyimage.com/800x400/0f0/fff" alt="Image 3">
+            <h2>Card 3</h2>
+            <p>Description for card 3.</p>
+        </div>
+    </div>
+    <div class="carousel-nav">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+</div> -->
+
+<!-- <section class="homepage-carousel">
+    <div class="carousel-wrapper">
+      
+      <button class="arrow left-arrow">&lt;</button>
+  
+      
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="/assets/images/welcome-hero/product-bg.png" alt="Biji-di-Panjiri">
+          <div class="carousel-content">
+            <h2>Healthy, Nutritious, <span>Delicious!</span></h2>
+            <ul>
+              <li>Strengthens Immunity</li>
+              <li>Restores Lost Energy</li>
+              <li>Fights Postpartum Weakness</li>
+            </ul>
+            <a href="#" class="btn">Shop Biji-di-Panjiri</a>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img src="/assets/images/welcome-hero/product-bg.png" alt="MCT Oil">
+          <div class="carousel-content">
+            <h2>Unlock Your Potential <span>with MCT Oil!</span></h2>
+            <ul>
+              <li>Power Your Energy</li>
+              <li>Fuel Your Focus</li>
+              <li>Ignite Your Metabolism</li>
+            </ul>
+            <a href="#" class="btn">Shop MCT Oil</a>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <img src="/assets/images/welcome-hero/product-bg.png" alt="Cooking Oil">
+          <div class="carousel-content">
+            <h2>Your Favourite Oils, <span>Now in 1 Litre!</span></h2>
+            <ul>
+              <li>Cholesterol Free</li>
+              <li>Rich in Vitamin E</li>
+              <li>100% Pure & Unrefined</li>
+            </ul>
+            <a href="#" class="btn">Shop Now!</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <button class="arrow right-arrow">&gt;</button>
+    </div>
+  </section> -->
+  
+
+  <section id="shopify-section-template--16391800324235__banner_slider_j4hbz8" class="shopify-section section"><section id="banner-slider" class="page-width-desktop-">
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+            <div class="carousel-slide">
+                <a href="">
+                <img height="540" width="675" src="./images/Biji-Di-Panjiri_16th---30th_1.webp" alt="Slide Image" loading="lazy">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="">
+                <img height="540" width="675" src="./images/MCT_Oil_Jan_16-30_V2_copy_1.webp" alt="Slide Image" loading="lazy">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="">
+                <img height="540" width="675" src="./images/Oil-1ltr_16th---30th_V2.webp" alt="Slide Image" loading="lazy">
+                </a>
+            </div>
+      </div>
+      <!-- Navigation buttons for optional use -->
+      <!--
+        <button class="carousel-button prev-button" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-button next-button" onclick="moveSlide(1)">❯</button>
+      -->
+      <button class="carousel-button prev-button">❮</button>
+      <button class="carousel-button next-button">❯</button>
+    </div>
+  </section>
+  
+  <script>
+    const carousel = document.getElementById('carousel');
+    let autoScroll; // Variable to store the auto-scroll interval
+  
+    // Dynamically calculate the width of a single slide
+    function calculateScrollAmount() {
+      const slide = document.querySelector('.carousel-slide'); // Select one slide
+      return slide ? slide.offsetWidth : 0; // Get the width of the slide
+    }
+  
+    // Scroll to the next slide
+    function scrollNext() {
+      const scrollAmount_ = calculateScrollAmount(); // Width of one slide
+      const totalSlides = document.querySelectorAll('.carousel-slide').length; // Total number of slides
+      const maxScrollLeft = scrollAmount_ * totalSlides; // Total scrollable width
+  
+      // Check if we reached the end
+      if (carousel.scrollLeft + carousel.offsetWidth >= maxScrollLeft) {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' }); // Reset to the start
+      } else {
+        carousel.scrollBy({ left: scrollAmount_, behavior: 'smooth' }); // Scroll to the next slide
+      }
+    }
+  
+    // Scroll to the previous slide
+    function scrollPrev() {
+      const scrollAmount_ = calculateScrollAmount(); // Width of one slide
+  
+      // Check if we are at the beginning
+      if (carousel.scrollLeft <= 0) {
+        const totalSlides = document.querySelectorAll('.carousel-slide').length;
+        const maxScrollLeft = calculateScrollAmount() * totalSlides; // Total scrollable width
+      } else {
+        carousel.scrollBy({ left: -scrollAmount_, behavior: 'smooth' }); // Scroll to the previous slide
+      }
+    }
+  
+    // Initialize the carousel and adjust for mobile
+    function initializeCarousel() {
+      const scrollAmount_ = calculateScrollAmount(); // Width of one slide
+      const isMobile = window.innerWidth <= 768; // Mobile breakpoint
+  
+      if (isMobile) {
+        // Start from the second slide on mobile
+        carousel.scrollTo({ left: scrollAmount_, behavior: 'instant' }); // Use 'instant' to avoid animation on load
+      } else {
+        // Start from the beginning on desktop
+        carousel.scrollTo({ left: 0, behavior: 'instant' }); // Reset to the first slide
+      }
+    }
+  
+    // Start auto-scroll
+    function startAutoScroll() {
+      autoScroll = setInterval(() => {
+        scrollNext();
+      }, 3000); // 2-second interval
+    }
+  
+    // Stop auto-scroll
+    function stopAutoScroll() {
+      clearInterval(autoScroll);
+    }
+  
+    // Add event listeners for buttons
+    document.querySelector('.next-button').addEventListener('click', () => {
+      stopAutoScroll(); // Stop auto-scroll on button click
+      scrollNext();
+    });
+  
+    document.querySelector('.prev-button').addEventListener('click', () => {
+      stopAutoScroll(); // Stop auto-scroll on button click
+      scrollPrev();
+    });
+  
+    // Stop auto-scroll on any click inside the carousel
+    carousel.addEventListener('click', stopAutoScroll);
+    carousel.addEventListener('mouseover', stopAutoScroll); // Stop auto-scroll on mouse over
+    carousel.addEventListener('mouseleave', startAutoScroll); // Restart auto-scroll on mouse leave
+  
+      // Stop auto-scroll on touch (mobile)
+    carousel.addEventListener('touchstart', stopAutoScroll); // Pause auto-scroll when the user starts touching
+    carousel.addEventListener('touchend', startAutoScroll); // Resume auto-scroll when the user stops touching
+  
+  
+  
+    // Initialize the carousel and start auto-scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      initializeCarousel(); // Adjust the starting position for mobile
+      startAutoScroll(); // Start auto-scroll
+    });
+  
+    // Recalculate on window resize
+    window.addEventListener('resize', initializeCarousel);
+  </script>
+  
+  <style data-shopify="">
+      .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+      }
+  
+      .carousel {
+        display: flex;
+        transition: transform 0.3s ease;
+        gap: 10px;
+         scroll-behavior: smooth; /* Smooth scrolling for modern browsers */
+        overflow-x: scroll;
+        padding:10px;
+         scroll-behavior: smooth;
+         -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer 10+ */
+        scrollbar-width:none;
+      }
+    /* Chrome, Edge, Safari */
+    .carousel::-webkit-scrollbar {
+      display: none; /* Hides scrollbar in WebKit browsers */
+    }
+  
+      /* Desktop layout: Show multiple slides */
+      .carousel-slide {
+        flex: 0 0 35%; /* Default for desktop to show multiple slides */
+        box-sizing: border-box;
+      }
+  
+      /* Mobile layout: Show only one full slide with some padding */
+      @media (max-width: 768px) {
+        /* .carousel {
+          padding-left: 30px; /* Adds space to the start of the carousel
+        } */
+  .carousel-button{
+    display:none;
+  }
+        .carousel-slide {
+          flex: 0 0 80%; /* Each slide takes 80% of the container’s width */
+        }
+  
+        .carousel-slide:first-child {
+          margin-left: 30px; /* Adds additional space to the first slide on mobile */
+        }
+      }
+  
+      .carousel-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  .carousel-button {
+    font-size:20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color:#8f8a8a80;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+  }
+  
+        .prev-button {
+          left: 10px;
+        }
+  
+        .next-button {
+          right: 10px;
+        }
+  
+     
+    section#shopify-section-template--17102258831499__banner_slider_j4hbz8 {
+      margin-top: 0;
+  }
+      @media screen and (min-width:480px){
+      section#banner-slider .swiper-slide {
+        width: 40%;
+      }
+      section#banner-slider .swiper-wrapper {
+        gap: 10px;
+      }
+    }
+  
+    @media screen and (max-width:480px){
+      section#banner-slider .swiper-slide {
+        width: 80%;
+      }
+    }
+  </style>
+  
+
+  
+
+<!-- <script>
+    const carouselInner = document.getElementById('carouselInner');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        showSlide(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length; 
+        showSlide(currentIndex);
+    });
+    showSlide(currentIndex); 
+</script> -->
+
+<!-- <script>
+    const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel-item');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+let currentIndex = 0;
+
+const updateCarousel = () => {
+  const width = items[0].clientWidth;
+  carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+};
+
+rightArrow.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateCarousel();
+});
+
+leftArrow.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+
+</script> -->
+
+</body>
+</html>
