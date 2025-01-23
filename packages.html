@@ -1,0 +1,529 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Contact us</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+		<!-- slider CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<style>
+    
+/* Basic styles (for all screen sizes) */
+.animated-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px; /* Add some padding for better readability on smaller screens */
+}
+
+.content-wrapper h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: animate-h1 3s ease-in-out infinite alternate;
+    animation-name: animate-h1; /* Define the animation name */
+    animation-duration: 3s; /* Duration of the animation */
+    animation-timing-function: ease-in-out; /* Timing function */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initial position */
+}
+
+.content-wrapper p {
+    color: #fff;
+    font-size: 1.2em;
+    animation: animate-p 3s ease-in-out infinite alternate;
+    animation-name: animate-p;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+@keyframes animate-h1 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate-p {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .content-wrapper h1 {
+        font-size: 4em; /* Larger font size on large screens */
+    }
+
+    .content-wrapper p {
+        font-size: 1.5em; /* Larger font size on large screens */
+    }
+
+    .animated-section{
+        height: 600px;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content-wrapper h1 {
+        font-size: 3.5em;
+    }
+
+    .content-wrapper p {
+        font-size: 1.3em;
+    }
+    .animated-section{
+        height: 550px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-wrapper h1 {
+        font-size: 2.5em;
+    }
+
+    .content-wrapper p {
+        font-size: 1.1em;
+    }
+    .animated-section{
+        height: 500px;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .content-wrapper h1 {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    .content-wrapper p {
+        font-size: 1em; /* Smaller font size */
+    }
+    .animated-section{
+        height: 400px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .content-wrapper h1 {
+        font-size: 1.5em; /* Even smaller font size */
+    }
+
+    .content-wrapper p {
+        font-size: 0.9em; /* Even smaller font size */
+    }
+    .animated-section{
+        height: 300px; /* Reduced height on very small screens */
+    }
+}
+
+/* Example of orientation-based media query */
+@media (orientation: landscape) {
+    .animated-section {
+        height: 400px; /* Adjust height for landscape orientation */
+    }
+}
+
+/* Example of pointer media query (for devices with fine pointer, like mouse) */
+@media (pointer: fine) {
+    .content-wrapper h1:hover,
+    .content-wrapper p:hover {
+        color: #f0f0f0; /* Only apply hover effect on mouse devices */
+        cursor: pointer; /*make the cursor pointer to indicate it is clickable */
+    }
+}
+
+/* Example of prefers-reduced-motion media query */
+@media (prefers-reduced-motion: reduce) {
+    .content-wrapper h1,
+    .content-wrapper p {
+        animation: none; /* Disable animations for users who prefer reduced motion */
+    }
+}
+
+
+</style>
+		
+        
+       
+
+    </head>
+	
+	<body>
+		
+	
+	<!--welcome-hero start -->
+	<div class="top-bar">
+		<!-- Icons on the left -->
+		<ul class="social-icons">
+		  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		  <li><a href="https://wa.me/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+		  <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		</ul>
+	  
+		<!-- Contact Info on the right -->
+		<div class="contact-info">
+		  <p>📞 +91 8925646250</p>
+		  <!-- <p>📧 info@example.com</p> -->
+		</div>
+	  </div>
+	  
+	  
+	<section id="home" class="welcome-hero" >
+<!-- Top red bar -->
+
+		<!-- top-area Start -->
+		<div class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+				<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+					<div class="container">
+
+						<!-- Start Header Navigation -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class='navbar-brand' href='index.htm' style='display: flex;
+align-items: center;'><img src="assets/images/brand/kb-logo.jpg" alt="" style="max-width: 40px;
+								margin-right: 8px;"><span>Kubeer Globals</span></a>
+
+						</div><!--/.navbar-header-->
+						<!-- End Header Navigation -->
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class=" "><a href='index.html'>home</a></li>
+								<li class=""><a href='about.html'>About us</a></li>
+                                <li class="active"><a href='packages.html'>Packages</a></li>
+								<li class=" "><a href='product.html'>Products</a></li>
+								<li class=""><a href="contact.html">contact</a></li>
+							</ul><!--/.nav -->
+						</div><!-- /.navbar-collapse -->
+					</div><!--/.container-->
+				</nav><!--/nav-->
+
+				<!-- End Navigation -->
+			</div><!--/.header-area-->
+			<div class="clearfix"></div>
+
+		</div><!-- /.top-area-->
+		<!-- top-area End -->
+
+		<!-- <div class="container">
+			<div class="welcome-hero-txt">
+				<h2>Connect Your World with Ours!</h2>
+				<p>
+					We link your goods to global opportunities, ensuring smooth trade and trusted partnerships every step of the way. Together, we make the world closer.</p>
+				<button class="welcome-btn" onclick="window.location.href='#welcome'">Connect Borders</button>
+			</div>
+		</div> -->
+	</section>
+
+
+    <section class="animated-section">
+        <img src="assets/images/welcome-hero/product-bg.png" alt="Background Image" class="background-image">
+        <div class="content-wrapper">
+          <h1>Kubeer Globals</h1>
+          <p>Explore Packages</p>
+        </div>
+      </section>
+      <section id="service" class="service">
+		<h1 class="custom-heading">Packages</h1>
+
+		<div class="container ">
+			<div class="service-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-6  why-bg">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class=""><img src="assets/images/brand/warehouse.jpg" alt="" style="border: none;
+										max-width: 40%;
+										height: auto;"></i>
+							</div>
+							<h2><a href="#">Storage<span> /</span> Warehousing</a></h2>
+							<p>
+								Deliver faster by Storing Items in our nearest and safest fulfilment centre. Choose one of the smartest and safest solutions for your material before delivery</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class=""><img src="assets/images/brand/transporting.jpg" alt="" style="border: none;
+										max-width: 39%;
+										height: auto;"></i>
+							</div>
+							<h2><a href="#">Transportation</a></h2>
+							<p>
+								Discovering the Joy of Smooth Moving in all Directions with on-time delivery commitments in a professional manner with the best services on road
+
+
+							</p>
+						</div>
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class=""><img src="assets/images/brand/logistics.jpg" alt="" style="border: none;
+										max-width: 39%;
+										height: auto;"></i>
+							</div>
+							<h2><a href="#">Implant Logistics & Solutions
+                            </a></h2>
+							<p>
+								We Do Professional, Cost-effective, time management, Skilled support on your Line feeding stores packing and kitting and others.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class=""><img src="assets/images/brand/packing.jpg" alt="" style="border: none;
+										max-width: 40%;
+										height: auto;"></i>
+							</div>
+							<h2><a href="#">Packing / Unpacking</a></h2>
+							<p>
+								Packing & Unpacking
+One Roof Solution for all your needs on flexible packing and Decanting needs. <br><br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
+
+	</section><!--/.service-->
+	<!--service end-->
+
+
+		
+
+
+        
+       
+
+
+
+
+
+
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">Kuber Globals</a>
+								</div>
+								<p>
+									This company ensures quality products, timely delivery, and global customer satisfaction. <br><br>
+									Kuber Globals CTO colony, Tambaram west, chennai 600045
+								</p>
+								<div class="footer-contact">
+									<!-- <p>lakshman@kuberglobals.com </p> -->
+									<p>+91 8925646250</p>
+									<p>+91 9884679565 </p>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about Kuber Globals</h2>
+								<ul>
+									<li><a href="about.html">home</a></li>
+									<li><a href="product.html">Products</a></li>
+									<li><a href="packages.html">Packages</a></li>
+									<li><a href="contact.html">Contact us <span></span></a></li>
+									<li><a href="about.html">about us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>Products</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+											<li><a href="product.html#product">Honey</a></li>
+											<li><a href="product.html#product">Dairy Products</a></li>
+											<li><a href="product.html#product">Herbal & medicinal Plants</a></li>
+											<li><a href="product.html#product">Groundnuts</a></li>
+											<li><a href="product.html#product">Cashew Kernals</a></li>
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+										<ul>
+											<li><a href="product.html#product">Handcrafts</a></li>
+											<li><a href="product.html#product">Spices</a></li>
+											<li><a href="product.html#product">BioDegradable Products</a></li>
+											<li><a href="product.html#product">Jaggery</a></li>
+											<li><a href="product.html#product">Refined Oils</a></li>
+											<li><a href="product.html#product"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<img src="assets/images/logo/logo.png" alt="">
+							<!-- <div class="single-footer-widget">
+								<h2>news letter</h2>
+								<div class="footer-newsletter">
+									<p>
+										Subscribe to get latest news  update and informations
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Add Email">
+									</div>
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<p style="color:#fff;">Copyright © 2025 kuberglobals. All rights reserved. &nbsp;&nbsp;&nbsp; Designed & Developed by: <a style="color:#fff;font-size: 14px;" href="https://amigowebster.com/" target="_blank">Amigowebster</a> </p>
+				  </div>
+				<!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+
+
+
+		<!-- slider script -->
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+		
+		<script src="assets/js/slider.js"></script>
+		
+		<!-- Slick JS -->
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      
+    </body>
+	
+</html>

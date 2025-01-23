@@ -1,14 +1,5 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : CarVilla HTML Template
-* Version       : 1.0
-==================================== */
-
-
-
 
 /*=========== TABLE OF CONTENTS ===========
 1. Scroll To Top
@@ -238,3 +229,31 @@ const carousel = document.getElementById('carousel');
     // Recalculate on window resize
     window.addEventListener('resize', initializeCarousel);
 // home carousel end
+
+
+
+
+
+// Function to get URL parameters (same as before)
+function getParameterByName(name, url = window.location.href) { /* ... */ }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const productCards = document.querySelectorAll(".product-card");
+    const category = getParameterByName('category');
+    let selectedTag = category || "all";
+
+    function filterProductCards(tag) {
+        if (!productCards) return;
+
+        productCards.forEach(card => {
+            const tags = card.getAttribute('data-tags')?.split(',') || [];
+            if (tag === 'all' || tags.includes(tag)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    filterProductCards(selectedTag); // Initial filtering
+});
