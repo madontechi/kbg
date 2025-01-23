@@ -59,7 +59,7 @@
              /* Light gray background */
             display: flex; /* Use flexbox for layout */
             justify-content: center; /* Center content horizontally */
-			/* flex-direction: row; */
+			/* flex-direction: column; */
             /* Center content vertically */
             /* min-height: 100vh; Ensure full viewport height */
             margin-bottom: 25%;
@@ -67,7 +67,8 @@
         }
 
         .container-contact {
-
+/* display: flex;
+flex-direction: row; */
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             /*  */
@@ -82,6 +83,8 @@
             padding: 20px;
             width: 500px; /* Set a fixed width */
             box-sizing: border-box; /* Include padding in width calculation */
+			display: flex;
+			flex-direction: column;
         }
 
         .contact-info-f h2 {
@@ -120,10 +123,12 @@
         }
         @media (max-width: 768px) {
             .container {
-                flex-direction: column; /* Stack vertically on smaller screens */
+                flex-direction: column; 
+				/* Stack vertically on smaller screens */
             }
             .contact-info-f {
-                width: 100%; /* Full width on smaller screens */
+                width: 100%; 
+				/* Full width on smaller screens */
             }
         }
         </style>
@@ -147,8 +152,8 @@
 	  
 		<!-- Contact Info on the right -->
 		<div class="contact-info">
-		  <p>📞 +91 123 456 7890</p>
-		  <p>📧 info@example.com</p>
+		  <p>📞 +91 8925646250</p>
+		  <!-- <p>📧 info@example.com</p> -->
 		</div>
 	  </div>
 	  
@@ -171,7 +176,7 @@
 							</button>
 							<a class='navbar-brand' href='index.htm' style='display: flex;
 align-items: center;'><img src="assets/images/brand/kb-logo.jpg" alt="" style="max-width: 40px;
-								margin-right: 8px;"><span>Kubeer Global</span></a>
+								margin-right: 8px;"><span>Kubeer Globals</span></a>
 
 						</div><!--/.navbar-header-->
 						<!-- End Header Navigation -->
@@ -220,8 +225,6 @@ align-items: center;'><img src="assets/images/brand/kb-logo.jpg" alt="" style="m
         <section class="contact-section">
 			
            
-        
-            
             <div class="container-contact">
                 <div class="contact-info-f">
                     
@@ -270,7 +273,7 @@ align-items: center;'><img src="assets/images/brand/kb-logo.jpg" alt="" style="m
 									Kuber Globals CTO colony, Tambaram west, chennai 600045
 								</p>
 								<div class="footer-contact">
-									<p>lakshman@kuberglobals.com </p>
+									<!-- <p>lakshman@kuberglobals.com </p> -->
 									<p>+91 8925646250</p>
 									<p>+91 9884679565 </p>
 									

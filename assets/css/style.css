@@ -482,9 +482,9 @@ section#shopify-section-template--17102258831499__banner_slider_j4hbz8 {
 /* welcome to */
 
 .welcome-section{
-    /* background-color: #f4fafa64; */
-    font-family: sans-serif; /* Use a clean font */
-   margin: 0;
+    /* background-color: #60482276; */
+    font-family: sans-serif;/* Use a clean font */
+    margin: 0;
    /* margin-top: -72px; */
    display: flex;
    justify-content: center; /* Center horizontally */
@@ -574,7 +574,7 @@ section#shopify-section-template--17102258831499__banner_slider_j4hbz8 {
    }
    
    .text-content h2 {
-     color:#3030ea;
+     color:#546022;
      font-size:xx-large;
      margin-bottom: 20px;
    }
@@ -750,12 +750,12 @@ section#shopify-section-template--17102258831499__banner_slider_j4hbz8 {
       flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-left: 50px;  
+        /* padding-left: 50px;   */
       }
   
     .product-card {
       width: 90%; /* Take most of the screen width */
-      max-width: 300px; /* Ensure it doesn't get too large */
+      max-width: 250px; /* Ensure it doesn't get too large */
       height: auto; /* Maintain aspect ratio */
     }
   }

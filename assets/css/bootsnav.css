@@ -999,7 +999,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav .navbar-header {
         float: none;
-        display: block;
+        display: flex;
+        align-items: center;
         text-align: center;
         padding-left: 30px;
         padding-right: 30px;
@@ -1374,7 +1375,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 
 @media (max-width: 767px) {
     nav.navbar.bootsnav .navbar-header {
-        padding-left: 15px;
+        padding-left: 0px;
         padding-right: 15px;
     }
     
