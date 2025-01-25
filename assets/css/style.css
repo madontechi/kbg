@@ -664,9 +664,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 /* ==================== Responsive Ipad ========================== */
 @media only screen and (max-width: 981px) {
-.slider-wrap{
+/* .slider-wrap{
     height: 750px;
-}
+} */
 .slide--bg{
         min-height: 720px;
     min-width: 720px;
@@ -684,9 +684,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 /* ==================== Responsive Ipad ========================== */
 @media only screen and (max-width: 480px) {
-    .slider-wrap {
+    /* .slider-wrap {
         height: 736px;
-    }
+    } */
         .slide--bg {
         min-height: 550px;
         min-width: 550px;
@@ -714,7 +714,99 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 
 }
+/* Media Queries for Mobile Devices */
+@media (max-width: 767px) {
+  .slider-wrap{
+    margin-top: 20px;
+    height: 200px
+  }
+  .swiper-slide {
+      background-size: cover;
+      background-position: center center;
+  }
 
+  .slide-detail {
+      padding: 10px;
+  }
+
+  .slide-main--subheading {
+      font-size: 14px;
+  }
+
+  .slide-main--heading {
+      font-size: 24px;
+  }
+
+  .slide-des {
+      font-size: 12px;
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+  }
+
+  /* Ensure buttons are responsive */
+  .swiper-button-next,
+  .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+  }
+
+  /* Autoplay progress bar adjustments */
+  
+  
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
+  .slide-main--subheading {
+      font-size: 16px;
+  }
+
+  .slide-main--heading {
+      font-size: 28px;
+  }
+
+  .slide-des {
+      font-size: 14px;
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+  }
+
+  
+}
+
+/* For Desktop Devices */
+@media (min-width: 1025px) {
+  .swiper-slide {
+      height: 100vh;
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+      width: 50px;
+      height: 50px;
+  }
+
+  .slide-main--subheading {
+      font-size: 18px;
+  }
+
+  .slide-main--heading {
+      font-size: 36px;
+  }
+
+  .slide-des {
+      font-size: 16px;
+  }
+}
 /*-------------------------------------
         3. home carousel
 --------------------------------------*/
